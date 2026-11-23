@@ -1,0 +1,53 @@
+RESULTADOS DE LA SIMULACIÓN (10 réplicas x 480 min)
+=======================================================
+
+PUNTO 1 - Atención por cajero (3 cajas mixtas)
+        clientes  atencion_prom  espera_prom  sistema_prom
+Caja 1       609           3.33         2.79          6.12
+Caja 2       646           3.10         3.02          6.12
+Caja 3       659           3.03         3.10          6.13
+Menor tiempo de atención: Caja 3 (3.03 min)
+Mayor tiempo de atención: Caja 1 (3.33 min)
+
+PUNTO 2 - Promedio de usuarios por tipo (por día)
+accion  tipo     
+Pago    Lento        18.0
+        Muy lento    22.2
+        Normal       11.3
+        Rápido        5.6
+Retiro  Lento        21.7
+        Muy lento    25.2
+        Normal       53.5
+        Rápido       33.9
+
+PUNTO 3 - Usuarios por tipo en cada réplica
+accion   Pago                         Retiro                        
+tipo    Lento Muy lento Normal Rápido  Lento Muy lento Normal Rápido
+replica                                                             
+1          21        22     16      9     22        26     45     26
+2           8        30     12      4     15        28     54     39
+3          17        26     10      5     21        30     40     26
+4          16        17      9      8     29        31     56     45
+5          20        24      8      6     22        22     52     28
+6          25        13      9      7     19        32     65     42
+7          24        24      7      8     24        23     56     36
+8          18        24     18      4     29        20     52     35
+9          13        17      6      1     20        21     61     23
+10         18        25     18      4     16        19     54     39
+Réplica con menos usuarios: 9 (162 usuarios)
+
+PUNTO 4 - Comparación de escenarios
+                           espera prom (min)  tiempo en sistema (min)  espera máx (min)  % que espera >5 min
+A: 3 cajas mixtas                       2.98                     6.12             38.44                18.60
+B: 1 retiro + 2 pagos                   4.70                     7.85             48.76                30.67
+C: 2 retiros + 1 pago                   3.43                     6.58             70.29                19.07
+D: 4 cajas mixtas (nueva)               1.85                     5.00             32.36                12.07
+
+Espera promedio por acción (min)
+accion                     Pago  Retiro
+A: 3 cajas mixtas          2.90    3.01
+B: 1 retiro + 2 pagos      2.80    5.52
+C: 2 retiros + 1 pago      7.86    1.55
+D: 4 cajas mixtas (nueva)  1.86    1.85
+
+PUNTO 5 - Mejor configuración exclusiva: C: 2 retiros + 1 pago

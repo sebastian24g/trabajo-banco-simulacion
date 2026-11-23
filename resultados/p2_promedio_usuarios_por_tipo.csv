@@ -1,0 +1,9 @@
+accion,tipo,promedio_usuarios_por_dia
+Pago,Lento,18.0
+Pago,Muy lento,22.2
+Pago,Normal,11.3
+Pago,Rápido,5.6
+Retiro,Lento,21.7
+Retiro,Muy lento,25.2
+Retiro,Normal,53.5
+Retiro,Rápido,33.9
